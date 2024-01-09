@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 app.get('/', (req,res)=>{
     res.send("Mail Server up and running");
 })
+app.get('/sent', (req,res)=>{
+    res.send("Mail sent");
+})
 
 // Define a route to handle incoming messages
 app.post('/send-mail', (req, res) => {
