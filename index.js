@@ -15,8 +15,8 @@ app.get('/', (req,res)=>{
 })
 
 // Define a route to handle incoming messages
-app.get('/send-mail', (req, res) => {
-    //const { from,subject, text } = req.body;
+app.post('/send-mail', (req, res) => {
+    const { from,subject, text } = req.body;
 
     // Create a transporter using your email provider's details
     const transporter = nodemailer.createTransport({
@@ -31,10 +31,10 @@ app.get('/send-mail', (req, res) => {
 
     // Define the email options
     const mailOptions = {
-        from:'jameswafula2002@gmail.com',
+        from,
         to:'dev.jimin02@gmail.com',
-        subject:'hello man',
-        text:'yoooo'
+        subject,
+        text
     };
 
     // Send the email
