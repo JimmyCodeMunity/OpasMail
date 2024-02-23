@@ -27,8 +27,10 @@ app.post('/send-mail', (req, res) => {
         port:465,
         secure:true,
         auth: {
-            user: 'ghostbmer@gmail.com', // replace with your email
-            pass: 'cofupbixpcurcvvb' // replace with your password
+            // user: 'ghostbmer@gmail.com', // replace with your email
+            // pass: 'cofupbixpcurcvvb' // replace with your password
+            user: 'contact@resellersprint.com', // replace with your email
+            pass: 'Great-2030-' // replace with your password
         }
     });
 
