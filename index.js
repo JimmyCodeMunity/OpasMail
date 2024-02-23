@@ -38,7 +38,8 @@ app.post('/send-mail', (req, res) => {
     // Define the email options
     const mailOptions = {
         from,
-        to:'dev.jimin02@gmail.com',
+        // to:'dev.jimin02@gmail.com',
+        to:'contact@resellersprint.com',
         subject,
         text
     };
