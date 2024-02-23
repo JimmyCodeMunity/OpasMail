@@ -23,7 +23,8 @@ app.post('/send-mail', (req, res) => {
 
     // Create a transporter using your email provider's details
     const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        // host: 'smtp.gmail.com',
+        host: 'mail.resellersprint.com',
         port:465,
         secure:true,
         auth: {
